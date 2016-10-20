@@ -1,0 +1,46 @@
+/** global config **/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 24px;
+  line-height: 1.5;
+  background: black;
+}
+
+
+/** quote container **/
+.quote-container {
+  background: white;
+  min-height: 100px;
+  width: 500px;
+  padding: 20px;
+  margin: 10% auto 10px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/** buttons **/
+
+.button-container {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 10px;
+  width: 95px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  background: white;
+
+}
