@@ -1,6 +1,6 @@
 var headHTML = document.querySelector('head');
-var quote = document.getElementById('quote')
-var author = document.getElementById('author')
+var quote = document.getElementById('quote');
+var author = document.getElementById('author');
 
 // On initial page load, use JSONP to access data from quote API.
 // When 'New Quote' button is clicked, remove old script, insert new script.
@@ -13,7 +13,7 @@ function apiScript() {
 
   var script = document.createElement('script');
   script.src = "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=parseJSONP"
-  document.querySelector('head').appendChild(script);
+  headHTML.appendChild(script);
 }
 apiScript();
 
