@@ -1,46 +1,85 @@
 /** global config **/
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 body {
+  font-family: 'Lato', sans-serif;
   font-size: 24px;
   line-height: 1.5;
   background: black;
 }
 
-
 /** quote container **/
+
 .quote-container {
   background: white;
   min-height: 100px;
   width: 500px;
   padding: 20px;
-  margin: 10% auto 10px auto;
+  margin: 10% auto 15px auto;
   border-radius: 5px;
   text-align: center;
+}
+#quote {
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+#author {
+  font-variant: small-caps;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 /** buttons **/
 
+a {
+  color: black;
+}
 .button-container {
   width: 300px;
   margin: auto;
   text-align: center;
 }
-
 button {
   border: none;
   border-radius: 10px;
   padding: 15px;
   margin-right: 10px;
-  width: 95px;
+  width: 125px;
   cursor: pointer;
   white-space: nowrap;
+  outline: none;
   text-align: center;
   vertical-align: middle;
   background: white;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 400;
+}
+button:hover {
+  opacity: 0.9;
+}
+button:active {
+  position: relative;
+  top: 5px;
+}
 
+@media (max-width: 525px) {
+  .quote-container {
+    max-width: 18rem;
+    font-size: 1.5rem;
+  }
+  button {
+    display: block;
+    font-size: 1.25rem;
+    width: 16rem;
+    margin-bottom: .75rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
