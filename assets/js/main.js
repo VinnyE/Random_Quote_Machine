@@ -22,10 +22,9 @@ var tweetQuote = function() {
  };
 
   var fadeQuote = function() {
-
     $('blockquote').animate({
     opacity: 0
-  }, 50, function() {
+    }, 50, function() {
     $(this).animate({
       opacity: 1
     }, 1000)

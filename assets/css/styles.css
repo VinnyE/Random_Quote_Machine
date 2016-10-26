@@ -45,7 +45,7 @@ a {
   margin: auto;
   text-align: center;
 }
-button {
+button, a {
   border: none;
   border-radius: 10px;
   padding: 15px;
@@ -61,10 +61,10 @@ button {
   font-family: inherit;
   font-weight: 400;
 }
-button:hover {
+button:hover. a:hover {
   opacity: 0.9;
 }
-button:active {
+button:active, a:active {
   position: relative;
   top: 5px;
 }
