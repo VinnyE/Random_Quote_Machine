@@ -74,8 +74,9 @@ button:active, a:active {
     max-width: 18rem;
     font-size: 1.5rem;
   }
-  button {
+  button, #tweet-quote {
     display: block;
+    height: 3em;
     font-size: 1.25rem;
     width: 16rem;
     margin-bottom: .75rem;
